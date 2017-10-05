@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#BADA55"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.luismontes.calculatorapp.MainActivity"
+    android:weightSum="1">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ccc"
+        android:inputType="number"
+        android:ems="20"
+        android:textAlignment="viewEnd"
+        android:layout_gravity="end"
+        android:text=""
+        android:id="@+id/numberField"
+        android:layout_alignParentRight="true"/>
+
+
+    <GridLayout
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/numberField"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="false"
+        android:orientation="vertical"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:id="@+id/gridLayout">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            android:text="+\nPlus"
+            android:textColor="#00F"
+            android:id="@+id/plusButton" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            android:text="-\nMinus"
+            android:textColor="#00F"
+            android:id="@+id/minusButton"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            android:text="*\nTimes"
+            android:textColor="#00F"
+            android:id="@+id/multiplyButton" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            android:text="/\nDivide"
+            android:textColor="#00F"
+            android:id="@+id/divideButton"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:padding="1dp"
+            android:text=".\nDecimal"
+            android:textColor="#00F"
+            android:id="@+id/decimalButton"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignTop="@+id/gridLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/gridLayout"
+        android:layout_toEndOf="@+id/gridLayout">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:radius="20dp"
+            android:text="1"
+            android:textColor="#00F"
+            android:id="@+id/num1"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="3"
+            android:textColor="#00F"
+            android:id="@+id/num3"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="4"
+            android:textColor="#00F"
+            android:id="@+id/num4"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="5"
+            android:textColor="#00F"
+            android:id="@+id/num5"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="6"
+            android:textColor="#00F"
+            android:id="@+id/num6"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="7"
+            android:textColor="#00F"
+            android:id="@+id/num7"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="8"
+            android:textColor="#00F"
+            android:id="@+id/num8"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="9"
+            android:textColor="#00F"
+            android:id="@+id/num9"
+            android:layout_row="2"
+            android:layout_column="2" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="2"
+            android:textColor="#00F"
+            android:id="@+id/num2"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="Enter"
+            android:textColor="#00F"
+            android:id="@+id/equalButton"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="0"
+            android:textColor="#00F"
+            android:id="@+id/num0"
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="1dp"
+            android:text="Clear"
+            android:textColor="#00F"
+            android:id="@+id/clearButton"
+            android:layout_row="3"
+            android:layout_column="2" />
+
+    </GridLayout>
+
+
+</RelativeLayout>
